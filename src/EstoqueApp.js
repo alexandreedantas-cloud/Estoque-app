@@ -8,14 +8,14 @@ export default function EstoqueApp() {
   const [quantidade, setQuantidade] = useState(0);
 
   useEffect(() => {
-    const dadosSalvos = localStorage.getItem("estoque");
+    const dadosSalvos = localStorage.getItem("estoque_produtos");
     if (dadosSalvos) {
       setProdutos(JSON.parse(dadosSalvos));
     }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("estoque", JSON.stringify(produtos));
+    localStorage.setItem("estoque_produtos", JSON.stringify(produtos));
   }, [produtos]);
 
   const login = () => setUsuarioLogado(true);
