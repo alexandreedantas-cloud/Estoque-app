@@ -1,5 +1,4 @@
-import EstoqueApp from '../src/EstoqueApp'
 
 export default function Home() {
-  return <EstoqueApp />
+  return <h1>Estoque App</h1>
 }
